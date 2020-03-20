@@ -1,0 +1,46 @@
+.AppCurveOutput_head {
+  display: flex;
+}
+
+.AppCurveOutput_main {
+  display: flex;
+  height: 300px;
+}
+
+.AppCurveOutput_graphContainer {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  margin: var(--gutter);
+}
+
+.AppCurveOutput_name {
+  flex: 1;
+  align-self: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: var(--gutter);
+}
+
+.AppCurveOutput_markers {
+  display: flex;
+  flex-direction: column;
+}
+
+.AppCurveOutput_markersLabel {
+  padding: var(--gutter);
+  font-weight: bold;
+}
+
+.AppCurveOutput_markersList {
+  overflow-y: auto;
+  padding: 0 var(--gutter);
+}
+
+.AppCurveOutput_textarea {
+  align-self: center;
+  width: 7ex;
+  height: 100%;
+  overflow-y: auto;
+  padding: 0 var(--gutter);
+}

@@ -1,0 +1,47 @@
+body {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT",
+    "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma,
+    Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  margin: 0;
+  color: var(--primary-text);
+  font-size: 15px;
+}
+
+:root {
+  --gutter: 12px;
+
+  /* https://material.io/guidelines/style/color.html#color-color-palette */
+  --primary-text: rgba(0, 0, 0, 0.87);
+  --secondary-text: rgba(0, 0, 0, 0.54);
+  --grey-50: #fafafa;
+  --grey-200: #eeeeee;
+  /* Original colour - green */
+  /* --light-green-50: #f1f8e9; */
+  /* --light-green-100: #dcedc8; */
+  /* --light-green-300: #aed581; */
+  /* --light-green-500: #8bc34a; */
+  /* --light-green-800: #558b2f; */
+  /* --green-50: #e8f5e9; */
+  /* New colour - blue */
+  --light-blue-50: #d0eeff;
+  --light-blue-100: #000000;
+  --light-blue-300: #029AF2;
+  --light-blue-500: #000000;
+  --light-blue-800: #0271B2;
+  --white: #ffffff;
+
+  --primary-border: 2px solid var(--light-blue-800);
+  --secondary-border: 1px solid var(--light-blue-800);
+  --border-radius: 3px;
+}
+
+a {
+  color: var(--light-blue-300);
+  transition: color 0.5s;
+}
+
+a:hover,
+a:active {
+  color: var(--light-blue-800);
+}

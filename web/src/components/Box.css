@@ -1,0 +1,13 @@
+.Box {
+  border: var(--primary-border);
+  border-radius: var(--border-radius);
+  margin: var(--gutter) 0;
+}
+
+.Box_title {
+  background-color: var(--light-blue-50);
+  text-align: center;
+  font-weight: bold;
+  padding: var(--gutter);
+  border-bottom: var(--secondary-border);
+}

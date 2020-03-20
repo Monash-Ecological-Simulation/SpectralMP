@@ -1,0 +1,79 @@
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.App_leftPanel > header > p {
+  margin: var(--gutter) 0;
+  color: var(--secondary-text);
+}
+
+.App_panel {
+  overflow: auto;
+  padding: 0 var(--gutter);
+}
+
+.App_panel:not(:last-child) {
+  border-right: 1px solid var(--grey-200);
+}
+
+.App_rightPanel,
+.App_leftPanel {
+  flex: 1;
+  max-width: 320px;
+}
+
+.App_leftPanel img {
+  align: center;
+  max-width: 300px;
+}
+
+.App_rightPanel {
+  display: flex;
+}
+
+.App_middlePanel {
+  flex: 2;
+  max-width: 90%;
+}
+
+.App_explanation {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.App_middlePanel dl {
+  margin-left:40px;
+  display: grid;
+  grid-template-columns: max-content auto;
+  max-width: 90%;
+}
+
+.App_middlePanel dt {
+  font-weight:bold;
+  grid-column-start: 1;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+.App_middlePanel dd {
+  grid-column-start: 2;
+}
+
+.App_middlePanel blockquote {
+  margin: 0 0;
+}
+
+.App_title {
+  font-size: 20px;
+  margin: var(--gutter);
+  text-align: center;
+}
+
+.App_download {
+  display: block;
+  width: 100%;
+  margin: var(--gutter) 0;
+}
+
+

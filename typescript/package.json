@@ -1,0 +1,22 @@
+{
+  "name": "spectral-reflectance",
+  "version": "1.0.0",
+  "description": "Spectral Reflectance analysis library, based on a code by Dr. Alan Dorin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dr. Matthieu Herrmann",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^2.1.0",
+    "ts-option": "^1.1.4",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "@types/csv-parse": "^1.1.11",
+    "@types/node": "^9.6.1",
+    "typescript": "^2.8.1"
+  }
+}

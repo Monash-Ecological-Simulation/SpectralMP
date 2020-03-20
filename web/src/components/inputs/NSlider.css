@@ -1,0 +1,41 @@
+/* Main parent div */
+.NSlider {
+  margin: var(--gutter);
+}
+
+/* First subdiv: label and editable input fields */
+/* LABEL MAX */
+.NSlider_labelAndNumber {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--gutter);
+}
+
+.NSlider_label {
+  flex: 4;
+}
+
+.NSlider_number {
+  box-sizing: border-box;
+  flex: 1;
+  min-width: 0;
+  margin-left: var(--gutter);
+  padding: calc(var(--gutter) / 2) var(--gutter);
+  background-color: transparent;
+  border: 0;
+  border-bottom: var(--secondary-border);
+}
+
+/* Second subdiv: slider */
+.NSlider_container {
+  display: flex;
+  align-items: center;
+}
+
+.NSlider_container > * {
+  flex: 1;
+}
+
+.NSlider_slider {
+  margin: 0 var(--gutter);
+}

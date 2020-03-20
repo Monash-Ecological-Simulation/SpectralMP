@@ -1,0 +1,6 @@
+.AppSummaryOutput {
+  position: relative;
+  height: calc(100% - 2 * var(--gutter));
+  width: 100%;
+  margin: var(--gutter) 0;
+}

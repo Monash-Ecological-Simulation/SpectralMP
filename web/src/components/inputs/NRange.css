@@ -1,0 +1,42 @@
+/* Main parent div */
+.NRange {
+  margin: var(--gutter);
+}
+
+/* First subdiv: label and editable input fields */
+/* MIN LABEL MAX */
+.NRange_labelAndNumber {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--gutter);
+}
+
+.NRange_label {
+  flex: 2;
+  text-align: center;
+}
+
+.NRange_number {
+  box-sizing: border-box;
+  flex: 1;
+  min-width: 0;
+  margin-left: var(--gutter);
+  padding: calc(var(--gutter) / 2) var(--gutter);
+  background-color: transparent;
+  border: 0;
+  border-bottom: var(--secondary-border);
+}
+
+/* Second subdiv: slider */
+.NRange_container {
+  display: flex;
+  align-items: center;
+}
+
+.NRange_container > * {
+  flex: 1;
+}
+
+.NRange_range {
+  margin: 0 var(--gutter);
+}

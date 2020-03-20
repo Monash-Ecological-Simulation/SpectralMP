@@ -1,0 +1,22 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^9.6.2",
+    "@types/yargs": "^10.0.2",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "csv-parse": "^2.2.0",
+    "ts-option": "^1.1.4",
+    "yargs": "^11.1.0"
+  }
+}

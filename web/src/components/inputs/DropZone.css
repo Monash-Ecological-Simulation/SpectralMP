@@ -1,0 +1,8 @@
+.DropZone {
+  margin: var(--gutter);
+  border: 2px dashed #bbb;
+  border-radius: 5px;
+  padding: 25px;
+  text-align: center;
+  color: #bbb;
+}

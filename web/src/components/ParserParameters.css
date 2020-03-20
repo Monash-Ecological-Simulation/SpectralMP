@@ -1,0 +1,14 @@
+.ParserParameters {
+  margin: var(--gutter);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ParserParameters_container {
+  display: flex;
+  align-items: center;
+}
+
+.ParserParameters_label {
+  margin-right: var(--gutter);
+}

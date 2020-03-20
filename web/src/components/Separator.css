@@ -1,0 +1,4 @@
+.Separator {
+  border-top: var(--secondary-border);
+  border-left: var(--secondary-border);
+}
