@@ -177,7 +177,12 @@ export default class App extends React.Component<Props, State> {
             </h1>
 
             <p>
-            To cite this software, please use the following ### (Todo: sofware in revision)
+              To cite this software, please use the following:
+              <blockquote>
+                Alan Dorin, Mani Shrestha, Matthieu Herrmann, Martin Burd, Adrian G.Dyer <br/>
+                Automated calculation of spectral-reflectance marker-points to enable analysis of plant colour-signalling to pollinators, MethodsX, 2020 <br/>
+                <a href="https://doi.org/10.1016/j.mex.2020.100827">https://doi.org/10.1016/j.mex.2020.100827</a>
+              </blockquote>
             </p>
 
             <p>
@@ -346,6 +351,11 @@ export default class App extends React.Component<Props, State> {
               Graphs can be produced with or without marker point annotations. You will obtain:
             </p>
             <ul>
+              <li>A csv of the results:</li>
+                <ul>
+                  <li>First column: the name of the input file</li>
+                  <li>Next columns: marker points for that file</li>
+                </ul>
               <li>
                 Per file:
                 <ul>
@@ -563,6 +573,19 @@ export default class App extends React.Component<Props, State> {
       zip.file(name, content);
       zip.file(name + ".png", this.generateCurve(bundle, landscape));
     });
+
+    // --- Includes marker points per file
+    var all_markers = ""
+    this.state.curveBundles.forEach(bundle => {
+      all_markers = all_markers + bundle.fName;
+      const markers: Array<string> = bundle.curveMarker.getListOfMarker(this.state.rangeParameter.start, this.state.rangeParameter.end).map(m => m.toFixed(2));
+      if (markers.length != 0 ){
+        all_markers += ","
+        all_markers += markers;
+      }
+      all_markers += "\n";
+    });
+    zip.file("results.csv", all_markers);
 
     zip.generateAsync({ type: "blob" }).then(function(blob) {
       saveAs(blob, "curves.zip");

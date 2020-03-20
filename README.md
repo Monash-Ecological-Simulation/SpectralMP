@@ -5,6 +5,9 @@ The easiest way to get going is to use the online version https://ecosim.infotec
 Once the page is loaded, everything is happening locally in your browser: no data is transmited to the server.
 
 ### Building and testing
+Note: the commands (`tsc`, `webpack`) used below live in `nodes_modules/.bin`.
+If a command is not found, use `nodes_modules/.bin/command` or add `nodes_modules/.bin` to your path.
+
 * First compile the Spectral Analysis module from the `typescript` folder.
   The output will be in the `dist` folder
   ```
